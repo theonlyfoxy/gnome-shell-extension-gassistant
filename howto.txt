@@ -1,0 +1,18 @@
+Ok, looks like you need to install google assistant.
+
+Please carry out the following in order to install assistant:
+https://developers.google.com/assistant/sdk/develop/python/config-dev-project-and-account
+(you don't need to put it in a raspberry pi...)
+
+With the client_secret JSON file do the following in a terminal:
+pip3 install --user google-assistant-library
+pip3 install --user google-auth-oauthlib[tool]
+google-oauthlib-tool --client-secrets /path/to/client_secret_client-id.json --scope https://www.googleapis.com/auth/assistant-sdk-prototype --save --headless
+
+Then go to the URL displayed and copy the code, put it back in the terminal.
+
+Thats it, it *should* work now!
+
+Close this file and restart google assistant from the extension. If all is well then this file will not open again. Say "Ok Google" to activate the assistant. Happy assisting!
+
+Good luck!
