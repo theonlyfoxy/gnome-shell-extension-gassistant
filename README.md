@@ -1,2 +1,2 @@
 # gnome-shell-extension-gassistant
-View status and control your google assistant in your gnome.
+View status and control your google assistant in your gnome desktop.
